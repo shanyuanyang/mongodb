@@ -4,12 +4,12 @@ const Blog = require('../modules/blog')
 // 自执行异步函数
 
 !(async () => {
-  // 创建用户
-  // const a = await Blog.create({
-  //   title: '标题2',
-  //   content: '内容2',
-  //   author: '李四'
-  // })
+  // 创建博客
+  const a = await Blog.create({
+    title: '新建111',
+    content: '内容11',
+    author: '新名11'
+  })
 
   // 查询
   // const list = await Blog.find(
@@ -32,12 +32,12 @@ const Blog = require('../modules/blog')
   // )
   // console.log(res);
 
-  // 删除
-  const res = await Blog.findByIdAndDelete(
-    {
-      _id: '5fd1e10a75c25b4bdc2207a3',
-      author: '111' //验证一下
-    }
-  )
-  console.log(res)
+  // // 删除
+  // const res = await Blog.findByIdAndDelete(
+  //   {
+  //     _id: '5fd1e10a75c25b4bdc2207a3',
+  //     author: '111' //验证一下
+  //   }
+  // )
+  // console.log(res)
 })()
